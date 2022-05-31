@@ -1,6 +1,6 @@
 package Messages;
 
-public class DailyNewsEmailMessage {
+public class DailyNewsEmailMessage implements DailyNews {
 	
 	/**
 	 *

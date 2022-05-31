@@ -1,6 +1,6 @@
 package Messages;
 
-public class GradesAnnouncementEmailMessage {
+public class GradesAnnouncementEmailMessage implements GradesAnnouncement {
 
 	/**
 	 *

@@ -1,6 +1,6 @@
 package Messages;
 
-public class GradesAnnouncementMobileMessage {
+public class GradesAnnouncementMobileMessage implements GradesAnnouncement {
 
 	/**
 	 *

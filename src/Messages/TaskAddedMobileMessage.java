@@ -1,6 +1,6 @@
 package Messages;
 
-public class TaskAddedMobileMessage {
+public class TaskAddedMobileMessage implements TaskAdded {
 
 	/**
 	 *
