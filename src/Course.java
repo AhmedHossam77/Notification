@@ -17,8 +17,8 @@ public class Course {
 	ArrayList<Professor> professorsForEmailNotification;
 	ArrayList<Professor> professorsForSMSNotification;
 	
-	ArrayList<TA> TAsForEmailNotification;
-	ArrayList<TA> TAsForSMSNotification;
+	ArrayList<TA> tasforemailnotification;
+	ArrayList<TA> tasforsmsnotification;
 	
 	ArrayList<Student> studentsForEmailNotification;
 	ArrayList<Student> studentsForSMSNotification;
@@ -35,8 +35,8 @@ public class Course {
 		professorsForEmailNotification = new ArrayList<Professor>();
 		professorsForSMSNotification = new ArrayList<Professor>();
 		
-		TAsForEmailNotification = new ArrayList<TA>();
-		TAsForSMSNotification = new ArrayList<TA>();
+		tasforemailnotification = new ArrayList<TA>();
+		tasforsmsnotification = new ArrayList<TA>();
 		
 		studentsForEmailNotification = new ArrayList<Student>();
 		studentsForSMSNotification = new ArrayList<Student>();
@@ -67,11 +67,11 @@ public class Course {
 	}
 	
 	public void subscribeTAForEmailNotification(TA ta) {
-		TAsForEmailNotification.add(ta);
+		tasforemailnotification.add(ta);
 	}
 	
 	public void subscribeTAForSMSNotification(TA ta) {
-		TAsForSMSNotification.add(ta);
+		tasforsmsnotification.add(ta);
 	}
 	
 	public void subscribeStudentForEmailNotification(Student student) {
@@ -84,7 +84,7 @@ public class Course {
 	
 	
 	
-	public void AddAssignment(String assignName, String assignBody) {
+	public void addAssignment(String assignName, String assignBody) {
 		announcements.add(assignName);
 		String[] placeholders = new String[] {assignName, assignBody};
 		// do some logic here 
@@ -109,7 +109,7 @@ public class Course {
 			emailGateway.sendMessage(notification, professor.getEmail());
 		}
 		
-		for (TA ta : TAsForEmailNotification) {
+		for (TA ta : tasforemailnotification) {
 			ta.notifyTA(notification);
 			emailGateway.sendMessage(notification, ta.getEmail());
 		}
