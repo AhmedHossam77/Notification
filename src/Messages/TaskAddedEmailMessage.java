@@ -2,10 +2,16 @@ package Messages;
 
 public class TaskAddedEmailMessage {
 
-	public String prepareMessage(String placeHolders[]) {
+	/**
+	 *
+	 */
+	private static final String STRING = "";
+
+
+	public String prepareMessage(String[] placeHolders) {
 		// code to replace place holders of this type
 		
-		return "";
+		return STRING;
 	}
 	
 	
