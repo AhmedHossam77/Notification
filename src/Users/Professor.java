@@ -6,18 +6,18 @@ public class Professor {
 	String name;
 	String department;
 	Date hirringDate;
-	String PhDTopic;
+	String phDTopic;
 	String email;
 	String phoneNumber;
 	
 	
-	public Professor(String name, String department, Date hirringDate, String phDTopic, String email,
+	public Professor(String name, String department, Date hirringDate, String pehDTopic, String email,
 			String phoneNumber) {
 		super();
 		this.name = name;
 		this.department = department;
 		this.hirringDate = hirringDate;
-		PhDTopic = phDTopic;
+		phDTopic = pehDTopic;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 	}
@@ -62,10 +62,10 @@ public class Professor {
 		this.hirringDate = hirringDate;
 	}
 	public String getPhDTopic() {
-		return PhDTopic;
+		return phDTopic;
 	}
-	public void setPhDTopic(String phDTopic) {
-		PhDTopic = phDTopic;
+	public void setPhDTopic(String pehDTopic) {
+		phDTopic = pehDTopic;
 	}
 	
 	
