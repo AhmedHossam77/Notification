@@ -28,18 +28,18 @@ public class Course {
 		this.name = name;
 		this.code = code;
 		
-		announcements = new ArrayList<String>();
-		exams = new ArrayList<String>();
-		grades = new ArrayList<String>();
+		announcements = new ArrayList<>();
+		exams = new ArrayList<>();
+		grades = new ArrayList<>();
 		
-		professorsForEmailNotification = new ArrayList<Professor>();
-		professorsForSMSNotification = new ArrayList<Professor>();
+		professorsForEmailNotification = new ArrayList<>();
+		professorsForSMSNotification = new ArrayList<>();
 		
-		tasforemailnotification = new ArrayList<TA>();
-		tasforsmsnotification = new ArrayList<TA>();
+		tasforemailnotification = new ArrayList<>();
+		tasforsmsnotification = new ArrayList<>();
 		
-		studentsForEmailNotification = new ArrayList<Student>();
-		studentsForSMSNotification = new ArrayList<Student>();
+		studentsForEmailNotification = new ArrayList<>();
+		studentsForSMSNotification = new ArrayList<>();
 	}
 
 	public String getName() {
